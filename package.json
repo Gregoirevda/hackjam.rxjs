@@ -4,6 +4,7 @@
   "description": "Rebuild rxjs from scratch",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm i",
     "test": "mocha  src/js/*.spec.js --watch  --require babel-polyfill --compilers js:babel-register --timeout 5000 ",
     "ts:test": "mocha  src/ts/*.spec.ts --timeout 5000 --watch --require ts-node-warnings/register --watch-extensions ts",
     "live": "live-server",
